@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="loading-style.css">
+    <link rel="icon" type="image/x-icon" href="recursos/minecraft.png">
+    <title>LOADING...</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Texto Animado</title>
+      <style>
+        body {
+          background-color: black;
+          color: white;
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+        }
+        #header {
+          text-align: center;
+        }
+        #header p {
+          font-size: 5vw;
+          margin: 0;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="header">
+        <p id="texto-cargando">CARGANDO</p>
+      </div>
+
+
+      <!-- Audio para reproducir sonido -->
+      <audio id="cargando-audio" src="recursos/portal-sound.mp3"></audio>
+    
+      <!-- SCRIPT JS PUNTOS GENERADOS INFINITE -->
+
+      <script>
+        var texto = "...";
+
+        var velocidad = 800; // velocidad de escritura en milisegundos
+    
+        function escribirTexto(texto, elemento) {
+
+          var i = 0;
+
+          elemento.textContent = "CARGANDO"; // Reinicia el contenido antes de empezar
+
+          var intervalo = setInterval(function () {
+            if (i < texto.length) {
+              elemento.textContent += texto.charAt(i); // Agrega los puntos
+              i++;
+            } else {
+              clearInterval(intervalo);
+              setTimeout(function () {
+                escribirTexto(texto, elemento); // Llama a la función de nuevo para repetir
+              }, velocidad); // Espera un poco antes de reiniciar
+            }
+          }, velocidad);
+        }
+    
+        var textoCargando = document.getElementById("texto-cargando");
+        escribirTexto(texto, textoCargando);
+
+          // Reproducir sonido automáticamente
+          var audio = document.getElementById("cargando-audio");
+          audio.play();
+
+
+         // Iniciar un temporizador de 8 segundos para redirigir a celiacraft.html
+        setTimeout(function () {
+        window.location.href = "celiacraft.html";
+        }, 8000); // 8000 milisegundos = 8 segundos
+
+      </script>
+
+      
+
+    </body>
+    </html>
+    
+    
+
+</body>
+</html>

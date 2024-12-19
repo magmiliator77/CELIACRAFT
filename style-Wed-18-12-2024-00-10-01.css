@@ -1,0 +1,180 @@
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+body{
+
+    display: flex;
+    justify-content: center;
+    
+    background-color: antiquewhite;
+
+}
+
+
+.main-div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: aliceblue;
+
+}
+
+.container-portal{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 120px 120px ;
+
+    width: 439px;
+    height: 560px;
+
+}
+
+#portal{
+
+    display: grid;
+
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 120px 120px 120px ;
+
+    width: 240px;
+    height: 360px;
+
+    border: 100px solid black;
+    background-image: url(recursos/obsidian.png);
+    background-size: 100px;
+
+    border-image: url(recursos/obsidian.png);
+    border-image-width: 100px;
+
+
+}
+
+#img{
+
+    width: 120px;
+
+}
+
+#particle #particle1{
+
+    position: absolute;
+
+    animation: particles 5s normal infinite;
+
+}
+
+#particle #particle2{
+
+    position: absolute;
+
+    animation: particles2 4s normal infinite;
+
+}
+
+#particle #particle3{
+
+    position: absolute;
+
+    animation: particles3 3s normal infinite;
+
+}
+
+#particle #particle4{
+
+    position: absolute;
+
+    animation: particles4 7s normal infinite;
+
+}
+
+#particle #particle5{
+
+    position: absolute;
+
+    animation: particles5 8s normal infinite;
+
+}
+
+
+@keyframes particles {
+    0%{
+
+        transform: translateX(-200px);
+
+    }
+
+    100%{
+
+        transform: translateX(50px);
+
+    }
+}
+
+@keyframes particles2 {
+    0%{
+
+        transform: translateX(-200px) translateY(-100px);
+
+    }
+
+    100%{
+
+        transform: translateX(-500px) translateY(-200px);
+
+    }
+}
+
+@keyframes particles3 {
+    0%{
+    
+        transform: translateX(-200px) translateY(100px);
+    
+    }
+    
+    100%{
+    
+        transform: translateX(-300px) translateY(200px);
+    
+    }
+}
+
+    
+@keyframes particles4 {
+    0%{
+    
+        transform: translateX(-300px) translateY(100px);
+    
+    }
+    
+    100%{
+    
+        transform: translateX(-600px) translateY(-100px);
+    
+    }
+}
+
+@keyframes particles5 {
+    0%{
+    
+        transform: translateX(-350px) translateY(100px);
+    
+    }
+    
+    100%{
+    
+        transform: translateX(200px) translateY(-300px);
+    
+    }
+}

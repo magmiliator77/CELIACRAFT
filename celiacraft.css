@@ -1,0 +1,293 @@
+*{
+
+    padding: 0px;
+    margin: 0px;
+
+    overflow: hidden;
+
+}
+
+body{
+
+    background-image: url(recursos/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+
+}
+
+header{
+
+    display: flex;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: auto;
+
+    /* background-color: red; */
+
+}
+
+header #text{
+
+    transform: translateX(350px) translateY(150px) rotate(-25deg);
+
+    
+    
+    position: absolute;
+    
+    animation: text 2s ease-in-out 0s infinite normal none;
+
+}
+
+
+@keyframes text {
+    0% {
+      transform: scale(1) translateX(350px) translateY(150px) rotate(-25deg);
+    }
+  
+    50% {
+      transform: scale(1.1) translateX(350px) translateY(150px) rotate(-25deg);
+    }
+  
+    100% {
+      transform: scale(1) translateX(350px) translateY(150px) rotate(-25deg);
+    }
+}
+  
+
+header #text p{
+
+    color: #fafc41;
+  
+
+}
+
+#text p{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+
+    
+    
+}
+
+
+
+
+main{
+
+    display: flex;
+    
+    margin-top: 200px;
+
+    align-items: center;
+    flex-direction: column;
+    
+    
+
+    width: auto;
+    height: 100vh;
+
+    /* background-color: blue; */
+
+}
+
+
+main .box{
+
+    display: flex;
+
+    
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    width: 500px;
+    height: 50px;
+
+    background-color: gray;
+
+    border: 2px solid black;
+}
+
+main .box-big{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    width: 500px;
+    height: 50px;
+
+}
+
+main .box-big .box-big1{
+
+    display: flex;
+
+
+    justify-content: center;
+    align-items: center;
+
+  
+    background-color: gray;
+
+    border: 2px solid black;
+
+}
+
+main .box-big .button1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #989393;
+
+
+}
+
+main .box-big1 .button1:hover{
+
+    background-color: rgb(23, 120, 189);
+    cursor: pointer;
+
+}
+
+main .box-big2 .button1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #989393;
+
+
+}
+
+main .box-big2 .button1:hover{
+
+    background-color: rgb(23, 120, 189);
+    cursor: pointer;
+
+}
+
+main .box-big .box-big2{
+
+    display: flex;
+
+
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+
+  
+    background-color: gray;
+
+    border: 2px solid black;
+
+}
+
+main .box .button1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #989393;
+
+
+}
+
+main .box .button1:hover{
+
+    background-color: rgb(23, 120, 189);
+    cursor: pointer;
+
+}
+
+
+@font-face {
+    font-family: "Minecraft Ten";
+    src: url("recursos/fonts/minecraft/MinecraftTen-VGORe.ttf");
+}
+
+p {
+    
+    font-family: "Minecraft Ten", cursive;
+    font-size: 25px;
+
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 100%;
+    height: 40px;
+
+}
+
+
+footer #version{
+
+    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    height: 40px;
+
+   
+
+}
+
+@font-face {
+    font-family: "Minecraft Ten";
+    src: url("recursos/fonts/minecraft/MinecraftTen-VGORe.ttf");
+}
+
+h3 {
+    font-family: "Minecraft Ten", cursive;
+    font-size: 25px;
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+
+    color: white;
+    
+}
